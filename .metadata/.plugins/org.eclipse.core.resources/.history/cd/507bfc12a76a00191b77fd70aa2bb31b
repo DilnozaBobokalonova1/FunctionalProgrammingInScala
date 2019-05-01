@@ -1,0 +1,12 @@
+package week4
+
+object exprs {
+  def show(e: Expr): String = e match {
+    case Number(x) => x.toString()
+    //the keyword new was not used to instantiate the Number case class because case classes have an apply method by default which takes care of object construction
+    case Sum(l, r) => show(l) + " + " + show(r)
+   }
+  
+  show(Sum(Number(1), Number(44)))
+  
+}

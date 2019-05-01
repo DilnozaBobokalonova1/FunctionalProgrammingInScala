@@ -1,0 +1,11 @@
+package week4
+
+trait Expr
+case class Number(n: Int) extends Expr
+//When you create a case class with parameters, the parameters are public vals
+case class Sum(e1: Expr, e2: Expr) extends Expr
+case class Message(sender: String, recipient: String, body: String)
+
+val message2 = Message("jorge@catalonia.es", "guillaume@quebec.ca", "Com va?")
+  val message3 = Message("jorge@catalonia.es", "guillaume@quebec.ca", "Com va?")
+  val messagesAreTheSame = message2 == message3  // true

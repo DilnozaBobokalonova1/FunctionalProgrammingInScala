@@ -1,0 +1,10 @@
+package week4
+
+
+trait Iterator[A] {
+  def hasNext: Boolean
+  def next(): A
+}
+class IntIterator(to: Int) extends Iterator[Int] {
+  
+}

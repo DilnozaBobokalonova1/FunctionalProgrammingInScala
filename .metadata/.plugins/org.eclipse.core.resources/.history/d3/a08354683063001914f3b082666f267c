@@ -1,0 +1,16 @@
+import week3._
+
+object scratch {
+	new Rational(1,2)
+	
+	def error(msg: String) = throw new Error(msg)
+	
+	val x = null
+	val y: String = x
+	
+	//val z: Int = x //cant initialize primitive types to null
+	//so null is a subtype of the reference types only
+	//it's incompatible with subtypes of AnyVal
+	if (true) 1 else false
+	
+}
